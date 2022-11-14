@@ -7,21 +7,6 @@
 		<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 		<script>
 			$(document).ready(function(){
-				//상단 오른쪽에 있는 햄버거 아이콘
-				let i=0;
-				$("header button").click(function(){
-					i++;  //햄버거 아이콘을 클릭하면 i=i+1; 즉 i=1이 되고,
-					if(i == 1) {  //그러면 메뉴를 슬라이드다운으로 보여주고 햄버거아이콘을 닫기아이콘으로 변경
-						$("nav").slideDown();  //<nav>가 현재 display:none;되어있는데 내려오면서 보이게(=slideDown)
-						$(this).text("close");
-					}
-					else {  //한 번 클릭한 상태에서 또 누르면 i=2가 되는데, 맨 밑에 i=0; 안쓰면 한 번밖에 적용이 안됨
-						$("nav").slideUp();
-						$(this).text("menu");
-						i=0;
-					}
-				});  //햄버거아이콘 클릭 끝
-
 				//썸네일 버튼 클릭
 				let s1 = "";  //썸네일 이미지 주소(src)
 				let a1 = "";  //썸네일 이미지 대체글(alt)
@@ -59,7 +44,7 @@
 			::-webkit-scrollbar-track {background: black;}
 			::-webkit-scrollbar-thumb {background: black;}  
 			body 	{font:10pt 'Nanum Gothic', sans-serif; background:black; width:414px;
-					 margin:auto; position:relative;
+					 margin:auto; position:relative; margin-top:51.9pt;
 			}
 			img {max-width:100%; display:block;}
 			.material-symbols-sharp {
