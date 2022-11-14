@@ -12,14 +12,14 @@
 				$("header button").click(function(){
 					i++;  //햄버거 아이콘을 클릭하면 i=i+1; 즉 i=1이 되고,
 					if(i == 1) {  //그러면 메뉴를 슬라이드다운으로 보여주고 햄버거아이콘을 닫기아이콘으로 변경
-						$("embed", parent.document).css("height", "500pt");
+						$("embed" , parent.document).css("height", "390px");
 						$("nav").slideDown();  //<nav>가 현재 display:none;되어있는데 내려오면서 보이게(=slideDown)
 						$(this).text("close");
 					}
 					else {  //한 번 클릭한 상태에서 또 누르면 i=2가 되는데, 맨 밑에 i=0; 안쓰면 한 번밖에 적용이 안됨
 						$("nav").slideUp();
 						$(this).text("menu");
-						$("embed", parent.document).css("height", "51.9pt");  //원래 설정으로 돌아오기
+						$("embed" , parent.document).css("height", "51.9pt");  //원래 설정으로 돌아오기
 						i=0;
 					}
 				});
@@ -39,8 +39,8 @@
 			}
 			
 			/*상단*/
-			header 	{display:flex; padding:15px;padding-top:25px; 
-				     border-bottom:2px solid gray;
+			header 	{display:flex; padding:15px;padding-top:25px;
+				     border-bottom:2px solid gray; background: black;
 			}
 			header h1 		{flex:1;}
 			header h1 img 	{margin:auto;}
